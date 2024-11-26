@@ -17,7 +17,7 @@ Este é um desafio com duas etapas de avaliação, uma teórica e outra prática
         public override void Speak() => Console.WriteLine("O cão ladra");
     }
     
-    selead class Cat : Animal
+    sealed class Cat : Animal
     {
         public override void Speak() => Console.WriteLine("O gato mia");
     }
