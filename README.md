@@ -48,8 +48,10 @@ Este é um desafio com duas etapas de avaliação, uma teórica e outra prática
      ** Uso de criptografia e certificados
      
 8. Arquitetura
+   * Monolítica centraliza todas as funcionalidades em uma única aplicação. Já os microsserviços dividem a aplicação em componentes menores e independentes. Quanto a escolha arquitetural dependente sempre da complexidade do negócio.
+   * Para alta escalabilidade, microsserviços são mais adequados, mas exigem mais gerenciamento. O tempo de responsta inicial do negócio é vital, caso seja urgente sugiro começar com Monólito e oportunamente transformar em microserviços, no contrário, o ideal é iniciar com microserviços.
 
-
+### Etapa Pratica
 O projeto será desenvolvido com ASP.NET Core (versão compatível com .NET 8), utilizando Entity Framework Core para manipulação de dados, e implementará WebSockets para notificações em tempo real. O design será orientado a objetos, seguindo os princípios SOLID, para garantir manutenibilidade e escalabilidade.
 
 ## Requisitos Funcionais
