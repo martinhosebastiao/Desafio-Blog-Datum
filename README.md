@@ -55,18 +55,27 @@ Este é um desafio com duas etapas de avaliação, uma teórica e outra prática
 O projeto será desenvolvido com ASP.NET Core (versão compatível com .NET 8), utilizando Entity Framework Core para manipulação de dados, e implementará WebSockets para notificações em tempo real. O design será orientado a objetos, seguindo os princípios SOLID, para garantir manutenibilidade e escalabilidade.
 
 ### Requisitos Funcionais
-### Autenticação
+#### Autenticação
   * Registrar usuario
   * Fazer login
     
-### CRUD de Postagens:
+#### CRUD de Postagens:
   * Listar todas as postagens.
   * Criar novas postagens.
   * Editar postagens existentes.
   * Excluir postagens.
     
-### Notificações em Tempo Real:
+#### Notificações em Tempo Real:
   Quando uma nova postagem for criada, os usuários conectados recebem uma notificação via WebSockets.
 
-### Persistência de Dados:
+#### Persistência de Dados:
   Utilizar Entity Framework Core e um banco de dados PostgreSQL.
+
+### Estrutura do Projeto
+
+O sistema seguirá uma arquitetura em camadas para organizar as responsabilidades:
+
+* Presentation: Controllers e WebSocket Handlers.
+* Application: Implementação de Regras de negócio, DTOs e serviços.
+* Domain: Entidades e interfaces.
+* Infrastructure: Repositórios e configuração do Entity Framework.
