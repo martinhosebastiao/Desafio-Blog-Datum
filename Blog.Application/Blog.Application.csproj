@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UseCases\" />
+    <None Remove="UseCases\Abstractions\" />
+    <None Remove="UseCases\Implementations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UseCases\" />
+    <Folder Include="UseCases\Abstractions\" />
+    <Folder Include="UseCases\Implementations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Blog.Domain\Blog.Domain.csproj" />
+  </ItemGroup>
+</Project>
