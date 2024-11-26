@@ -54,7 +54,7 @@ Este é um desafio com duas etapas de avaliação, uma teórica e outra prática
 ### Etapa Pratica
 O projeto será desenvolvido com ASP.NET Core (versão compatível com .NET 8), utilizando Entity Framework Core para manipulação de dados, e implementará WebSockets para notificações em tempo real. O design será orientado a objetos, seguindo os princípios SOLID, para garantir manutenibilidade e escalabilidade.
 
-## Requisitos Funcionais
+### Requisitos Funcionais
 ### Autenticação
   * Registrar usuario
   * Fazer login
