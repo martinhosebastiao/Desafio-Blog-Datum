@@ -7,17 +7,17 @@ Este é um desafio com duas etapas de avaliação, uma teórica e outra prática
   * Polimorfismo permite que um objeto seja tratado como uma instância de sua classe base, promovendo extensibilidade e reutilização do código. Em C#, isso é implementado através de métodos virtuais/override e interfaces.
      Exemplo:
     ```csharp
-    class Animal
+    abstract class Animal
     {
         public virtual void Speak() => Console.WriteLine("O animal faz um som");
     }
     
-    class Dog : Animal
+    sealed class Dog : Animal
     {
         public override void Speak() => Console.WriteLine("O cão ladra");
     }
     
-    class Cat : Animal
+    selead class Cat : Animal
     {
         public override void Speak() => Console.WriteLine("O gato mia");
     }
