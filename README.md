@@ -43,9 +43,9 @@ Este é um desafio com duas etapas de avaliação, uma teórica e outra prática
 6. WebSockets
    * A comunicação via websockets é bidirecional já a HTTP é unidirecional.
    * As principais considerações de segurança são:
-     ** Autorização e Autenticação
-     ** Controle no limites de acesso
-     ** Uso de criptografia e certificados
+     * * Autorização e Autenticação
+     * * Controle no limites de acesso
+     * * Uso de criptografia e certificados
      
 8. Arquitetura
    * Monolítica centraliza todas as funcionalidades em uma única aplicação. Já os microsserviços dividem a aplicação em componentes menores e independentes. Quanto a escolha arquitetural dependente sempre da complexidade do negócio.
