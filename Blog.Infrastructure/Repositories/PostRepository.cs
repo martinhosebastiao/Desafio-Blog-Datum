@@ -1,44 +1,17 @@
-﻿using System;
-using Blog.Domain.Entities;
-using Blog.Domain.Interfaces;
+﻿using Blog.External.Infrastructure.Persistences.Contexts;
+using Blog.External.Infrastructures.Persistences.Abstractions;
+using Blog.Internal.Domains.Core.Entities.Posts;
+using Microsoft.Extensions.Logging;
 
 namespace Blog.Infrastructure.Repositories
 {
-	public class PostRepository: IPostRepository
-	{
-		public PostRepository()
-		{
-		}
-
-        public Task<List<Post>> GetAllPostsAsync(
-            CancellationToken cancellationToken = default)
+    public class PostRepository : BaseRepository<Post>, IPostRepository
+    {
+        public PostRepository(
+            ILogger<Post> logger, MainContext queroGasContext) :
+            base(logger, queroGasContext)
         {
-            throw new NotImplementedException();
         }
-
-        public Task<Post?> GetPostByIdAsync(
-            int id, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Post> CreatePostAsync(
-            Post post, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Post?> UpdatePostAsync(
-            Post post, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> DeletePostAsync(
-            int id, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        } 
     }
 }
 
